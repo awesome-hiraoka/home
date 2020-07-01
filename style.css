@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+body {
+    margin: 0;
+}
+
+.all-wrapper{
+    width: 100%;
+    position: relative;
+    min-height: 100%;
+}
+header {
+    position: fixed;
+    z-index: 1;
+    background-color:yellow;
+    width: 100%;
+    height: 60px;
+    opacity: 0.8
+    
+}
+
+.header-title{
+ width: 250px;
+ margin-top: 16px;
+float: left;
+}
+
+.header-right{
+    float: right;
+}
+header .insta{
+    float: left;
+    margin-top: 15px;
+    margin-right: 10px;
+    height:30px
+}
+
+.main {
+    padding-top: 110px;
+    padding-bottom: 100px;
+}
+
+.pic-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.main .visible,.main .hidden{
+    height: 400px;
+}
+
+.hidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.main h3{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace,sans-serif;
+    font-weight: 400;
+    animation: flash 2s linear infinite;
+}
+
+@keyframes flash {
+    0%,100% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0;
+    }
+  }
+
+.main-pic-button:hover .visible{
+    opacity: 0;
+}
+
+.main-pic-button:hover .hidden{
+    opacity: 1;
+}
+
+.main-pic-button:hover h3{
+    animation: none;
+    opacity: 0;
+}
+
+footer {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    background-color: gray;
+    opacity: 0.7;
+}
+
+.footer-container{
+text-align: center;
+margin-top: 1px;
+margin-bottom: 1px;
+}
+
+
+footer p{
+    margin:0;
+    font-size: 10px;
+    color: honeydew;
+}
+
+footer img{
+    height: 20px;
+    margin-top:3px
+}
+
+footer .hidden {
+    transition: none;
+}
+
+footer .hidden.mailaddress{
+    color: black;
+    font-weight: bold;
+    z-index: 1;
+    line-height: 20px;
+}
+
+footer .pic-box:hover .visible{
+    opacity: 0;
+}
+
+footer .pic-box:hover .hidden{
+    opacity: 1;
+}
