@@ -57,7 +57,6 @@ header .insta{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
 }
 
 .pic-box {
@@ -70,6 +69,7 @@ header .insta{
 
 .main-image{
     height: 250px;
+    margin:0 auto;
 }
 
 .hidden {
