@@ -63,7 +63,7 @@ header .insta{
     cursor: pointer;
 }
 
-.main .visible,.main .hidden{
+.main-image{
     height: 400px;
 }
 
